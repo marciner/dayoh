@@ -1,0 +1,275 @@
+/*Style globalne*/
+
+body {
+	background-image: url("../img/background.png");
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	font-size: 16px;
+  	line-height: 1.8em;
+  	color: white;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h4 {
+	font-size: 1.2em;
+}
+
+
+/*header styles*/
+.header{
+	width: 100%;
+	height: 596px;
+	position: relative;
+}
+.header button{
+	background-color: rgb(94, 149, 205);
+	color: white;
+	border-color: rgb(94, 149, 205);
+}
+
+.header .container .content{
+position: absolute;
+bottom: 0px;
+}
+
+
+/*details*/
+
+.details{
+	background-color: white;
+	color: black;
+}
+
+.details .container div{
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+.details span{
+	color: gray;
+}
+
+.details img{
+	border-radius: 50%;
+	border:  5px solid rgb(235, 235, 235);
+	padding: 20px;
+}
+
+
+/*buying styles*/
+.buying{
+	background-color: rgb(232, 118, 107);
+}
+.buying .container div{
+	margin-top: 20px;
+	margin-bottom: 30px;
+
+}
+.buying button{
+	margin-top: 20px;
+	color: white;
+	background-color: rgb(232, 118, 107);
+}
+/*ABOUT*/
+.about{
+	background-color: rgb(94, 149, 205);
+}
+
+.about div div{
+	margin-top: 70px;
+	margin-bottom: 100px;
+}
+
+/*prices styles*/
+
+.prices{
+	background-color: white;
+}
+.prices table{
+	color: rgb(154, 154, 154);
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+table span{
+	color: rgb(232, 120, 108);
+}
+thead th{
+	text-align: center;
+	background-color: rgb(225, 225, 225);
+}
+thead th:hover{
+	background-color: rgb(232, 118, 107);
+	color: white;
+}
+
+table button,.carousel .item button{
+	background-color: rgb(232, 118, 107);
+	border-color: rgb(232, 118, 107);
+	color: white;
+	width: 220px;
+	height: 50px;
+	box-shadow: 1px 5px 12px 0px rgba(232,118,107,1);
+}
+
+/*SIGNUP*/
+.signup input, .signup button{
+	margin-left: 270px;
+	height: 40px;
+	margin-bottom: 50px;
+}
+
+.signup button{
+	background-color: rgb(94, 149, 205);
+	width: 110px;
+}
+
+/*CAROUSEL*/
+
+.carousel{
+	background-color: white;
+}
+
+.carousel img{
+	border-radius: 50%;
+}
+.carousel-inner div .background{
+	height: 400px;
+	width: 100%;
+}
+
+.carousel-inner span {
+	color: rgb(154, 154, 154);
+}
+
+
+.background{
+	margin-top: 100px;
+}
+
+.background .description{
+	margin-top: 30px;
+	margin-left: 100px;
+}
+.background .content{
+	margin-left: 400px;
+}
+.typeczek{
+	background-image: url("../img/typeczek_1.png");
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	border-radius: 50%;
+	height: 250px;
+	width: 250px;
+}
+.carousel ol li{
+	background-color: rgb(233, 202, 199);
+
+}
+
+.carousel-indicators .active{
+	background-color: rgb(232, 118, 107);
+
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    margin-top: 200px;
+}
+
+.carousel .item button{
+	height: 100%;
+}
+
+.carousel .item button:hover{
+	color: black;
+}
+
+/*footer*/
+
+.footer{
+	background-color: rgb(231, 119, 107);
+}
+
+.footer .container div{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.footer .container .copyright{
+	margin-top: 30px;
+}
+.footer img{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	border:  1px solid rgb(235, 235, 235);
+	padding: 5px;
+}
+
+
+@media (max-width: 991px) {
+	.header img{
+  		display: none;
+  	}
+
+  	.header .content h1, .header .content h4{
+  		margin-bottom: 100px;
+  		text-align: center;
+  	}
+
+ 	.signup input, .signup button{
+		margin-left: 0px;
+	}
+
+	.background .content {
+		margin-left: 250px;
+	}
+	.background .content .description {
+		margin-left: 0px;
+	}
+
+	.carousel ol{
+		display: none;
+	}
+
+	.footer .container div{
+		display: inline;
+	}
+	.footer .container div{
+		align-content: initial;
+	}
+}
+
+@media (max-width: 667px) {
+	.background .content {
+		margin-left: 50px;
+	}
+	.about img{
+		width: 
+	}
+}
+
+@media (max-width: 414px) {
+	.carousel {
+		display: none;
+	}
+	.about img{
+		width: 300px;
+
+	}
+	.footer .container div{
+		display: block;
+	}
+	.footer .container .col-md-2 .col-md-4{
+		display: inline;
+	}
+}
